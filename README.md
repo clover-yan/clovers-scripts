@@ -15,3 +15,12 @@ Clover 的脚本。包括微小但好用的脚本。
 ### 先决条件
 - Python 3
 - 安装了 PIL 库（`pip install pillow`）
+
+## music_renamer
+`music_renamer.py` 用于将某个文件夹下的所有音乐文件按照`歌手 - 歌曲名`格式重命名。
+
+符合先决条件之后，在终端中运行即可。
+
+### 先决条件
+- Python 3
+- 安装了 TinyTag 库（`pip install tinytag`）
