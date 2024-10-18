@@ -16,10 +16,10 @@ for mp3 in mp3s:
 	# replace invalid characters
 	new_name = new_name.replace('/', '-').replace('\\', '-').replace(':', ' -').replace('*', '').replace('?', '').replace('"', "'").replace('<', '').replace('>', '').replace('|', '').replace('!', '')
 	# check if file already exists
-	if new_name != mp3.lower() and os.path.exists(new_name):
+	if new_name.lower() != mp3.lower() and os.path.exists(new_name):
 		i = 2
 		valid_name = new_name[:-len(extension)-1] + f' ({i}).{extension}'
-		while new_name != mp3 and os.path.exists(valid_name):
+		while new_name.lower() != mp3.lower() and os.path.exists(valid_name):
 			i += 1
 			valid_name = new_name[:-len(extension)-1] + f' ({i}).{extension}'
 		new_name = valid_name
