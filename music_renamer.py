@@ -10,7 +10,7 @@ for mp3 in mp3s:
 	# remane mp3 file to 'artist - title.mp3'
 	new_name = tag.artist + ' - ' + tag.title + f'.{extension}'
 	# replace invalid characters
-	new_name = new_name.replace('/', '-').replace('\\', '-').replace(':', ' -').replace('*', '').replace('?', '').replace('"', "'").replace('<', '').replace('>', '').replace('|', '').replace('!', '')
+	new_name = new_name.replace('/', '_').replace('\\', '_').replace(':', '_').replace('*', '_').replace('?', '_').replace('"', '_').replace('<', '_').replace('>', '_').replace('|', '_').replace('!', '_')
 	# check if file already exists
 	if new_name[:-len(extension)-1] != mp3[:-len(extension)-1] and os.path.exists(new_name):
 		i = 2
