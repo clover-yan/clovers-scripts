@@ -31,9 +31,13 @@ Clover 的脚本。包括微小但好用的脚本。
 
 支持 `mp3` 和 `flac` 格式的音乐文件。
 
+> **注意：**这个脚本会覆盖文件中原有的歌词标签，请确保你留有原始文件的备份。
+
 支持两种风格，用 `-s` 参数指定：
 - `salt`：适用于椒盐音乐、Myune Music 等播放器，罗马字歌词会被放在原歌词的下方一行、翻译歌词的上方一行。
 - `vanilla`：适用于香草音乐，罗马字歌词会和翻译歌词同处于原歌词的下方一行，中间用竖线 `｜` 分隔。
+
+支持使用 `cutlet` 和 `pykakasi` 两种引擎进行转换，用 `-b` 参数指定。
 
 支持对这个脚本生成的带罗马音歌词进行风格互转，用 `-c` 参数指定。
 
@@ -51,7 +55,8 @@ Clover 的脚本。包括微小但好用的脚本。
   ...
   ```
 - 安装了 mutagen 库（`pip install mutagen`）
-- 安装了 pykakasi 库（`pip install pykakasi`）
+- 安装了 pykakasi 库（`pip install pykakasi`）  
+  或 cutlet 库（`pip install cutlet`）
 
 ## photo_merger（仅 Windows）
 
