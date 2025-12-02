@@ -23,6 +23,19 @@ Clover 的脚本。包括微小但好用的脚本。
 - Python 3
 - 安装了 TinyTag 库（`pip install tinytag`）
 
+## music_lyrics_romaniser
+
+`music_lyrics_romaniser.py` 用于将某个文件夹下的所有音乐文件的歌词标签（元数据）进行罗马字化处理。
+支持 `mp3` 和 `flac` 格式的音乐文件。
+
+符合先决条件之后，在终端中运行即可。
+
+### 先决条件
+
+- Python 3
+- 安装了 mutagen 库（`pip install mutagen`）
+- 安装了 pykakasi 库（`pip install pykakasi`）
+
 ## photo_merger（仅 Windows）
 
 `photo_merger.py` 用于将某个文件夹下的所有图片全部尾接头相连拼接。
